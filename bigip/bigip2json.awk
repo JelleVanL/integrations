@@ -7,7 +7,7 @@
   BEGIN { FS=" "; RS="\n"; ORS="\n" }
   {
 
-    maxLength=30
+    maxLength=4000 #this limit on the length of a key name has changed to 4000
     # Manage first line
     if (NR == 1) {
       print "{"
